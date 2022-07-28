@@ -1,0 +1,107 @@
+{
+  'desc': {
+    'uid': 19319172,
+    'type': 64,
+    'rid': 17527510,
+    'view': 229430,
+    'repost': 20,
+    'like': 3061,
+    'is_liked': 0,
+    'dynamic_id': 681868273637130249,
+    'timestamp': 1657598229,
+    'orig_type': 0,
+    'user_profile': {
+      'info': {
+        'uid': 19319172,
+        'uname': '差评君',
+        'face': 'https://i0.hdslb.com/bfs/face/229599e175faafa1855c0f103d512e8b469b5aad.jpg',
+        'face_nft': 0
+      },
+      'card': {
+        'official_verify': {
+          'type': 0,
+          'desc': 'bilibili 知名UP主'
+        }
+      },
+      'vip': {
+        'vipType': 2,
+        'vipDueDate': 1739462400000,
+        'vipStatus': 1,
+        'themeType': 0,
+        'label': {
+          'path': '',
+          'text': '年度大会员',
+          'label_theme': 'annual_vip',
+          'text_color': '#FFFFFF',
+          'bg_style': 1,
+          'bg_color': '#FB7299',
+          'border_color': ''
+        },
+        'avatar_subscript': 1,
+        'nickname_color': '#FB7299',
+        'role': 3,
+        'avatar_subscript_url': ''
+      },
+      'pendant': {
+        'pid': 0,
+        'name': '',
+        'image': '',
+        'expire': 0,
+        'image_enhance': '',
+        'image_enhance_frame': ''
+      },
+      'rank': '10000',
+      'sign': 'Debug the World！商务合作请加V：maguabd01',
+      'level_info': {
+        'current_level': 6
+      }
+    },
+    'uid_type': 1,
+    'status': 1,
+    'dynamic_id_str': '681868273637130249',
+    'pre_dy_id_str': '0',
+    'orig_dy_id_str': '0',
+    'rid_str': '17527510'
+  },
+  'card': '{ "id": 17527510, "category": { "id": 15, "parent_id": 3, "name": "日常" }, "categories": [ { "id": 3, "parent_id": 0, "name": "生活" }, { "id": 15, "parent_id": 3, "name": "日常" } ], "title": "《谭谈交通》全面下架，谭Sir真的要“赔到裤子都没了”？", "summary": "本文来自公众号【差评】差评君昨晚睡觉之前，看到一条新闻：《 谭谈交通 》因侵权投诉全面下架，主持人谭 Sir 本人或将面临 “ 裤子都要赔掉 ” 的局面。一瞬间，一种荒诞又愤怒的感觉涌上心头。凭什么？《 谭谈交通 》大家应该不陌生。这是一档交通安全宣教节目，首播于 2005 年，主持人谭乔是一位交警队民警，他在成都街头寻找违规驾驶的人，引导对方知道自身交通违法行为的危险性。因为节目内容自然、真诚、富有人间烟火气，饱受大众喜爱，很多片段至今仍然被大众拿出来反复欣赏和解读。差评君随手举几个，自己特别", "banner_url": "https:\\/\\/i0.hdslb.com\\/bfs\\/article\\/32e94b90aa2ee201031777e63819f06855d0dc67.jpg", "template_id": 4, "state": 0, "author": { "mid": 19319172, "name": "差评君", "face": "https:\\/\\/i0.hdslb.com\\/bfs\\/face\\/229599e175faafa1855c0f103d512e8b469b5aad.jpg", "pendant": { "pid": 0, "name": "", "image": "", "expire": 0 }, "official_verify": { "type": 0, "desc": "bilibili 知名UP主" }, "nameplate": { "nid": 1, "name": "黄金殿堂", "image": "https:\\/\\/i0.hdslb.com\\/bfs\\/face\\/82896ff40fcb4e7c7259cb98056975830cb55695.png", "image_small": "https:\\/\\/i1.hdslb.com\\/bfs\\/face\\/627e342851dfda6fe7380c2fa0cbd7fae2e61533.png", "level": "稀有勋章", "condition": "单个自制视频总播放数>=100万" }, "vip": { "type": 2, "status": 1, "due_date": 0, "vip_pay_type": 0, "theme_type": 0, "label": { "path": "", "text": "年度大会员", "label_theme": "annual_vip" }, "avatar_subscript": 1, "nickname_color": "#FB7299" } }, "reprint": 0, "image_urls": [ "https:\\/\\/i0.hdslb.com\\/bfs\\/article\\/8cbd80a2ae550eba12b660af27f2e99ea6939564.png" ], "publish_time": 1657598228, "ctime": 1657598004, "stats": { "view": 31997, "favorite": 118, "like": 3061, "dislike": 0, "reply": 220, "share": 68, "coin": 50, "dynamic": 0 }, "attributes": 156, "words": 1983, "origin_image_urls": [ "https:\\/\\/i0.hdslb.com\\/bfs\\/article\\/2877bf8e97b074c203bb7e2067b3b4598762cf29.png" ], "list": { "id": 275345, "mid": 19319172, "name": "吐槽", "image_url": "", "update_time": 1657598004, "ctime": 1591958267, "publish_time": 1657598228, "summary": "", "words": 102136, "read": 0, "articles_count": 0, "state": 1, "reason": "", "apply_time": "", "check_time": "" }, "is_like": false, "media": { "score": 0, "media_id": 0, "title": "", "cover": "", "area": "", "type_id": 0, "type_name": "", "spoiler": 0, "season_id": 0 }, "apply_time": "", "check_time": "", "original": 1, "act_id": 0, "dispute": null, "authenMark": null, "cover_avid": 0, "top_video_info": null, "type": 0, "check_state": 0 }',
+  'extend_json': '{"like_icon":{"action":"","action_url":"","end":"","end_url":"","start":"","start_url":""},"topic":{"is_attach_topic":1}}',
+  'extra': {
+    'is_space_top': 0
+  },
+  'display': {
+    'topic_info': {
+      'topic_details': [
+        {
+          'topic_id': 143584,
+          'topic_name': '版权',
+          'is_activity': 0,
+          'topic_link': 'https://search.bilibili.com/all?keyword=%E7%89%88%E6%9D%83'
+        },
+        {
+          'topic_id': 23901,
+          'topic_name': '互联网',
+          'is_activity': 0,
+          'topic_link': 'https://search.bilibili.com/all?keyword=%E4%BA%92%E8%81%94%E7%BD%91'
+        }
+      ]
+    },
+    'relation': {
+      'status': 1,
+      'is_follow': 0,
+      'is_followed': 0
+    },
+    'comment_info': {
+      'comments': [
+        {
+          'uid': 6713752,
+          'name': '皮特帕克A',
+          'content': '如果版权是为了资本牟利/垄断而存在的，那就失去了维护版权的意义。'
+        }
+      ],
+      'comment_ids': '120469005648'
+    },
+    'show_tip': {
+      'del_tip': '要删除动态吗？'
+    }
+  }
+}

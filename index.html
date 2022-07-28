@@ -1,0 +1,997 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>每日推荐</title>
+</head>
+<style>
+    #face_card {
+        width: 100%;
+        height: 80px;
+        text-align: left;
+    }
+    
+    #face {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    }
+    
+    #nick_name,#date {
+        margin-left: 30px;
+        line-height: 40px;
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .card {
+        text-align: center;
+        background: rgb(244, 244, 244);
+        justify-content: center;
+        align-items: center;
+        margin: 60px 500px 10px 500px;
+        padding: 30px;
+        /* 正方形图标圆角半径20px */
+        border-radius: 20px;
+        /* 第一个值是外阴影X&Y轴方向偏移18px，模糊度半径是30px，阴影颜色为0.2透明度的黑色 */
+        /* 第二个值是外阴影X&Y轴方向偏移-18px，模糊度半径是30px，阴影颜色为白色 */
+        box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2), -18px -18px 30px rgba(255, 255, 255, 1);
+        /* tricks: 利用transition给常态于按压态两者状态互相变换过程增加缓动动画 */
+        transition: all 0.2s ease-in-out;
+    }
+</style>
+
+<body>
+
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-07-28 18:04:17</h1>
+                </div>
+                <h1>一个月亲身体会! 劳逸结合真的能效率翻倍200%?! | 4步超级好用的方法</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Va411T7ih"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/52859f10924bd7aaa5f6a2deb6fea5e461647cda.jpg"></a>
+                <p>一出去玩总有愧疚感? 玩乐与效率可以结合!!</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-07-28 16:02:23</h1>
+                </div>
+                <h1>世界拥挤不堪，有你还算浪漫</h1>
+
+                <a href="https://www.bilibili.com/video/BV1mS4y1t7e1"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/142758663568cd4e14b5cdf12adb3b3aa2ac281a.jpg"></a>
+                <p>BGM：《Rollin' On》/椅子乐团</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-27 18:30:04</h1>
+                </div>
+                <h1>标榜科技频道 却不讲技术  电丸科技AK 没货了</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Ea411T7Uw"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/ad478ac8ddb742b007e3d751f54030e1c2781133.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
+                    <h1 id="nick_name">大狸子切切里</h1>
+                    <h1 id="date" style="color: gray;">2022-07-26 09:30:06</h1>
+                </div>
+                <h1>建议改名：MacBook Air Pro！它真的能实现我对轻薄本的所有幻想吗？</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Hd4y1D7eK"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/24a99a72cbbad38a2de8407292215de300624ab6.jpg"></a>
+                <p>MacBook Air的意义只是最便宜的macbook吗？其实不是，这段时间用下来，我决定把MacBook Pro换成它。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/229599e175faafa1855c0f103d512e8b469b5aad.jpg">
+                    <h1 id="nick_name">差评君</h1>
+                    <h1 id="date" style="color: gray;">2022-07-25 18:02:24</h1>
+                </div>
+                <h1>炒作、稀缺、奢侈品？为什么导盲犬被喷成了一场骗局？【差评君】</h1>
+
+                <a href="https://www.bilibili.com/video/BV1jW4y1y7Ld"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/6a16379b889e16224ab125f6af541a1523e95f46.jpg"></a>
+                <p>一只导盲犬20万培育成本？花了这么多钱，这狗还未必好用？狗狗天生就是红绿色盲，真的可以用来导盲？
+在咨询了专业人士后，差评君想带大家一起来看看导盲犬背后的真相到底是什么.....
+
+【参考资料】
+《中华人民共和国导盲犬国家标准》、《关于2021年中国导盲犬大连培训基地单只犬培训成本转向审计报告》
+视氪、中国导盲犬大连培训基地、国际导盲犬联盟、nippon官网
+微博@中国导盲犬
+TechXplore|Researchers develop a robotic guide dog to assist blin</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/cb9ef82714507e6bda707dac216da94c97d70037.jpg">
+                    <h1 id="nick_name">稚晖君</h1>
+                    <h1 id="date" style="color: gray;">2022-07-24 09:02:05</h1>
+                </div>
+                <h1>【自制】我做了一把 模 块 化 机 械 键 盘 !【软核】</h1>
+
+                <a href="https://www.bilibili.com/video/BV19V4y1J7Hx"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/7d9c67a1b6a6d2343bcb3c8f22f8134984321dc7.jpg"></a>
+                <p>这次做的是一个我一直很想要的理想键盘，项目资料等我休息一阵子整理完后会开源~
+
+BGM：Summer、WE SURVIVED、Octopus
+视频中用到的矩阵键盘解释片段来源：https://www.youtube.com/watch?v=vLGklanzQIc
+视频中关于一些客制化键盘展示的片段来源：https://space.bilibili.com/21058820</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-23 18:30:06</h1>
+                </div>
+                <h1>还是没能留下你，Jony Ive「SIGNOW」</h1>
+
+                <a href="https://www.bilibili.com/video/BV1o94y1S7Y8"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/635d6799db09ad120caec11fad8d149a4ccb85e1.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-23 03:26:51</h1>
+                </div>
+                <h1>【直播回放】「802.11 AK」悲哀！短视频割韭菜 2022年7月22日18点场</h1>
+
+                <a href="https://www.bilibili.com/video/BV1bY4y1j7H7"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/9558464b6a03feb013308f4e1a4d8b2eecc66df2.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-07-22 21:09:48</h1>
+                </div>
+                <h1>苹果表盘的功能有多变态？手腕上的自律神器 ⌚️表盘安利 | Apple Watch最常用APPs</h1>
+
+                <a href="https://www.bilibili.com/video/BV1NG4y1i76B"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/a54b5293138ada79e3dc8fb3c54c573e7c8e5654.jpg"></a>
+                <p>分享必须给大家安利的苹果手表设置和使用技巧！！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/0218434a0c746b6c8ea1785fbfe0b31a5f66d3e5.jpg">
+                    <h1 id="nick_name">林亦LYi</h1>
+                    <h1 id="date" style="color: gray;">2022-07-22 19:38:48</h1>
+                </div>
+                <h1>【亦】iPhone的万年接口，终于有人治了</h1>
+
+                <a href="https://www.bilibili.com/video/BV1pr4y177vN"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/030c86bbb7e88a60bfcf71b7def9b0e1b2409e36.jpg"></a>
+                <p>Lightning 接口在 iPhone 上已经使用了有十年了，十年前它是一个小巧高速的接口，十年后却成了一个小巧龟速的接口。欧盟的 USB-C 统一政策公布之后，Lightning 的生命周期正式进入了倒计时。未来的 iPhone 会乖乖听欧盟的话，还是另有自己的一套想法？今天咱们就来聊一聊。
+
+Timestamp:
+00:00 USB-C绝缘体：iPhone
+00:44 为什么Lightning接口用了这么久
+03:05 Lightning接口的问题
+03:46 欧盟的USB-C统一政策
+05:15 </p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/229599e175faafa1855c0f103d512e8b469b5aad.jpg">
+                    <h1 id="nick_name">差评君</h1>
+                    <h1 id="date" style="color: gray;">2022-07-21 21:46:09</h1>
+                </div>
+                <h1>游戏技术，凭什么是现代科技的重要生产力？【差评君】</h1>
+
+                <a href="https://www.bilibili.com/video/BV14T411E7nd"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/d449b8a647c488b3e28ae140e2641507497b10d4.jpg"></a>
+                <p>如今，游戏技术已经从简单的像素点移动，进化成了足以模拟现实世界的综合性技术，并广泛应用于工业、医疗、文保领域。关于游戏技术，有哪些我们不知道的事？未来的游戏技术又会创造怎样的可能？为了聊好这个宽泛的话题这期节目，我们打算一改以往的视频形式想单纯用现场谈话的方式向大家呈现</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-21 18:30:03</h1>
+                </div>
+                <h1>Twitter遇渣男 马斯克始乱终弃「SIGNOW」</h1>
+
+                <a href="https://www.bilibili.com/video/BV1NN4y1M7no"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/9c8e7491c30484c893c6b96f6503a75fe1ba1262.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-20 18:30:01</h1>
+                </div>
+                <h1>怎么看待国内智能家居的中控屏解决方案</h1>
+
+                <a href="https://www.bilibili.com/video/BV1aS4y1J7qo"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/1bee2f27a4b4893d087638be9727e467832bcdde.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
+                    <h1 id="nick_name">大狸子切切里</h1>
+                    <h1 id="date" style="color: gray;">2022-07-19 12:00:56</h1>
+                </div>
+                <h1>真的有那味？十多年前的磁带DV竟然还能拍？文 艺 复 兴</h1>
+
+                <a href="https://www.bilibili.com/video/BV1BY4y1L7T9"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/52a44c08d8c73f260a219da6d539ffe72498c60c.jpg"></a>
+                <p>这个短片我想拍好久啦！终于拍到了我梦想的回到90年代(*^▽^*)
+大家如果也想试试的话，想要便宜一点，也可以买一个手机采集卡，然后就可以接到任何手机里录制啦。这次还用上了智云的五倍棒灯FR100C补光，效果针不戳！
+也感谢@翟羽住一  @小川映画OgawaStudio  的技术指导</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/505ad86b845f775471e8d82bdca293181b3abb5b.jpg">
+                    <h1 id="nick_name">不高兴就喝水</h1>
+                    <h1 id="date" style="color: gray;">2022-07-18 22:55:59</h1>
+                </div>
+                <h1>把用户当成傻瓜还是太保守了 |  我真想跟甲方打一架</h1>
+
+                <a href="https://www.bilibili.com/video/BV1VB4y1Y7TD"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/d17efe16854c27bc8ec13421fde801a6db9326c1.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-18 18:30:09</h1>
+                </div>
+                <h1>大吉大利，今晚吃机！「SIGNOW」</h1>
+
+                <a href="https://www.bilibili.com/video/BV1FS4y1E7GB"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/a3d44938686bf750734f33c20f44b7b2b8eb69c0.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-07-17 18:00:08</h1>
+                </div>
+                <h1>7月Vlog｜打卡blue bottle☕️🧇｜初入新工区💻｜周末出逃去山里⛰️</h1>
+
+                <a href="https://www.bilibili.com/video/BV1YY4y177wd"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/b774232b35c5d997cce9c933688738a9405d142a.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+相机：富士XS10/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+支架：影视飓风xUNOKI联名 Tripod-Go 便携三脚架
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-07-17 17:06:03</h1>
+                </div>
+                <h1>一起掉入天空的幻境吧</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Er4y177gT"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/07a12f54eaf7b02edab1d110fcece7b4d733cd75.jpg"></a>
+                <p>BGM：《Young Dumb&Broke》/Joseph Vincent</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-16 18:30:05</h1>
+                </div>
+                <h1>苹果5G 寄！「SIGNOW」</h1>
+
+                <a href="https://www.bilibili.com/video/BV1na411S7Ur"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/3decd496ac4ccf6298bca2da9d77b246a680305b.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/0218434a0c746b6c8ea1785fbfe0b31a5f66d3e5.jpg">
+                    <h1 id="nick_name">林亦LYi</h1>
+                    <h1 id="date" style="color: gray;">2022-07-16 18:01:11</h1>
+                </div>
+                <h1>冲破二次元！虚拟主播都能面基了？</h1>
+
+                <a href="https://www.bilibili.com/video/BV1kY4y177mR"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/cdceebcc7925513e71e3fb3eded6106c4cf882a0.jpg"></a>
+                <p>@转世虚拟猫是一位个人全能型的虚拟UP主，从音乐制作到MV、虚拟直播都是一个人搞定。这次他接受了另一位UP主林亦的采访，聊了聊他的工作流，以及个人虚拟创作的现状，还一起制作了一段小动画。对3D虚拟创作，尤其是个人或是小型团队创作感兴趣的朋友，可以了解一下#NVIDIAStudio#。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
+                    <h1 id="nick_name">电丸科技AK</h1>
+                    <h1 id="date" style="color: gray;">2022-07-16 04:48:20</h1>
+                </div>
+                <h1>【直播回放】「802.11 AK」中国标准后来居上</h1>
+
+                <a href="https://www.bilibili.com/video/BV1KN4y1T72Z"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/55fe89ae37f413e7b663475bd313d6305a0dcd91.jpg"></a>
+                <p>-</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
+                    <h1 id="nick_name">大狸子切切里</h1>
+                    <h1 id="date" style="color: gray;">2022-07-15 09:00:11</h1>
+                </div>
+                <h1>任天堂十年前的暴死主机，未完全进化版Switch？</h1>
+
+                <a href="https://www.bilibili.com/video/BV1494y1Q7Bn"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/b9d7661039324e5ff50790090d235f8608aec6f5.jpg"></a>
+                <p>有这么一台主机，塞尔达旷野之息一开始本来是它独占，可惜它命太短，连旷野之息也没能续住…… 
+我搞了一台WiiU之后发现其实还挺好玩的，确实有很多不足，但也能发现任天堂在主机上的很多试探。如果改进了它的那些大缺点，小伙伴们会想买这样的双屏主机吗?
+
+[补童年] GBA 补上童年缺的这张票！BV1mv411k71j
+【入坑指南】SwitchOled终于来啦！BV1444y1x7VJ</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-07-14 22:13:52</h1>
+                </div>
+                <h1>新外观Air上巨好看!! | 星光色M2 MacBook Air开箱体验</h1>
+
+                <a href="https://www.bilibili.com/video/BV1qS4y1J7pn"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/05be1f7be81c050571dcd1fd0b602db9622b2fd7.jpg"></a>
+                <p>比M1加价的M2 Air如何呢？ 和大家开箱体验一下吧~！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/2a20bb2fb3a29cae314e3860e39dc9e6885ca536.jpg">
+                    <h1 id="nick_name">锦堂生活空间</h1>
+                    <h1 id="date" style="color: gray;">2022-07-12 22:08:04</h1>
+                </div>
+                <h1>飞机飞过时，为何会形成两束涡流？【清华航院学长硬核科普】</h1>
+
+                <a href="https://www.bilibili.com/video/BV1U3411c7Yt"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/c733948a941ebb7c85110640bd7097c705a729b7.jpg"></a>
+                <p>飞机滑过时候为何会形成两束涡？
+这期视频将会带各位从我们航院学生的角度，看看我们在《航天动力学》这门课中是怎么一步一步从而为的欧拉方程，一步一步拓展到三维，得出形成这两束涡的原因。并且简略分析我们是怎么通过数学计算出这两束涡对飞机升力的影响的</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/382e4c81565b8720b7890885f14d1c6e1cad2f51.jpg">
+                    <h1 id="nick_name">硬件茶谈</h1>
+                    <h1 id="date" style="color: gray;">2022-07-12 13:25:07</h1>
+                </div>
+                <h1>【硬件科普】带你认识CPU第05期——CPU是怎么计算乘法的</h1>
+
+                <a href="https://www.bilibili.com/video/BV1AB4y1p7ax"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/436d9addec7be3c57a0af468373c464dd5170101.jpg"></a>
+                <p>这是我们的系列节目带你认识CPU的第六期。在第一期节目里我们详细介绍了CPU中最基础的结构Mosfet的工作原理，在第二期节目里我们详细介绍了Mosfet是如何构成逻辑门的，之后我们又介绍了逻辑门是如何构成加法器以及减法器并完成加减法运算的，这期节目我们带你详细了解一下CPU是如何计算乘法的。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
+                    <h1 id="nick_name">大狸子切切里</h1>
+                    <h1 id="date" style="color: gray;">2022-07-11 09:00:02</h1>
+                </div>
+                <h1>这也能洗？？最强扫地机器人竟是我自己 | 秒新K3洗地机体验</h1>
+
+                <a href="https://www.bilibili.com/video/BV1iB4y1H7wZ"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/841e964eeaf3458521690f497b9ffebf56f3ae00.jpg"></a>
+                <p>第一次用洗地机，发现还蛮好用的，要是污水箱能直接通往四次元空间，岂不是连污水都不用倒了？不知道小伙伴们觉得这种数码清洁产品怎么样？</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/0218434a0c746b6c8ea1785fbfe0b31a5f66d3e5.jpg">
+                    <h1 id="nick_name">林亦LYi</h1>
+                    <h1 id="date" style="color: gray;">2022-07-08 21:03:52</h1>
+                </div>
+                <h1>【亦】被库克“杀死”的产品：iPod touch</h1>
+
+                <a href="https://www.bilibili.com/video/BV1XG411W7om"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/ef86b88026f08ac96ad18f9bcd19b87da170c29a.jpg"></a>
+                <p>iPod 停产的消息已经过去有段时间了，这段时间我一直在了解这个堪称传奇的产品线，有了自己的一些发现。在广为人知的 iPod 以外，其实还有一款相对小众的 iPod touch，而这款同样停产了的小众产品，从生到死，反而紧紧扣住了苹果音乐业务的几个重要节点。今天咱们唠三个故事，iTunes，以及 iPod touch 的“生”与“死”。
+
+Timestamp:
+00:00 起点 - iTunes 与 iPod
+05:26 故事一 - Windows 版 iTunes
+07:50 故事二 - iPod to</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-07-08 19:05:48</h1>
+                </div>
+                <h1>照镜子还能瘦？智能健身镜贵在哪？| 独居女生体验FITURE魔镜3</h1>
+
+                <a href="https://www.bilibili.com/video/BV1SY4y1E7gQ"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/bdf556bd7cd8a27f92e4cf1c7ae74a9e44f7baa7.jpg"></a>
+                <p>快6K的镜子能做什么？和大家一起测评体验一下一直想试试的智能健身镜！！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-07-08 17:28:17</h1>
+                </div>
+                <h1>“殊不知我三代为农，愿从我辈仰望星空”</h1>
+
+                <a href="https://www.bilibili.com/video/BV1yr4y1u7sE"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/b77291224ed6612002ebecff33440417e4d8bd51.jpg"></a>
+                <p>BGM：《一路生花》/温奕心</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-07-07 13:11:46</h1>
+                </div>
+                <h1>毕业快乐，但快乐不毕业！</h1>
+
+                <a href="https://www.bilibili.com/video/BV1194y1X77q"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/a74b86ca9f4489937f89bee3ecb0b84bb1707115.jpg"></a>
+                <p>BGM：《登上榜首的约 (AION)》——小阿七携手广汽埃安车主共创的毕业主题曲，致敬首届00后毕业生</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
+                    <h1 id="nick_name">大狸子切切里</h1>
+                    <h1 id="date" style="color: gray;">2022-07-06 22:28:07</h1>
+                </div>
+                <h1>超大底真的方向错了吗？它徕了！ 小米12S Ultra体验</h1>
+
+                <a href="https://www.bilibili.com/video/BV17t4y1b7Z2"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/bb34b4056dace7a20a702c137c73fc7484b292d3.jpg"></a>
+                <p>小米居然给出了超大底的另一种使用方式？？不得不说作为坐拥三只猫猫的UP，我实在是太喜欢这台机子了。不过打游戏的小伙伴，你可以想象一下抱着下水井盖的感觉</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
+                    <h1 id="nick_name">大狸子切切里</h1>
+                    <h1 id="date" style="color: gray;">2022-07-04 15:30:02</h1>
+                </div>
+                <h1>我妈都拖不动，智能手表竟然拖我去运动？| 华为WATCH FIT 2 上手体验</h1>
+
+                <a href="https://www.bilibili.com/video/BV1LB4y1H7e6"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/e207637c9d9027fd3abd87ffcc022b3e3999eef1.jpg"></a>
+                <p>记得上一次和大家聊FIT 1还是一年半前。不过在那之后我还是没有坚持运动，不知道这次的华为WATCH FIT 2能让我坚持运动吗？</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-07-03 18:00:12</h1>
+                </div>
+                <h1>Weekend Vlog｜毕业前半年｜回家看爸妈｜家里新成员｜周中忙成🐶周末很快乐</h1>
+
+                <a href="https://www.bilibili.com/video/BV12Z4y1e73E"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/80b06362824dd6109cc4a7731f4e8f38f5d711b1.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+相机：富士XS10/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+支架：影视飓风xUNOKI联名 Tripod-Go 便携三脚架
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/59563e87b949107bfde66abec0a37952f4ec4218.jpg">
+                    <h1 id="nick_name">啥都会一点的研究生</h1>
+                    <h1 id="date" style="color: gray;">2022-07-01 21:55:02</h1>
+                </div>
+                <h1>(强推|双字)2022吴恩达机器学习Deeplearning.ai课程</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Pa411X76s"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/772be6a2e21d8622446632eb6615178a00596d5a.png"></a>
+                <p>这是吴恩达佬团队在Coursera新开设的机器学习课程；
+上个版本相信是大部分人的引路教程：BV1LE411h7P4
+新版本终于使用Python，此外，网络搭建等使用的是Tensorflow(毕竟和Google***)，暂相比下如支持向量机等内容被删减；
+我将标题进行了翻译，字幕使用Coursera提供的英文，结合机翻与自己写的字幕脚本，尽力啦；
+课程地址：https://www.coursera.org/specializations/machine-learning-introduction
+辛苦@渚</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-07-01 18:28:15</h1>
+                </div>
+                <h1>一定要合群吗</h1>
+
+                <a href="https://www.bilibili.com/video/BV18S4y1p7Jn"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/c3d40a8e35912681d66cf88bef256550dde18cad.jpg"></a>
+                <p>BGM：《 Car Crash in G Major》/fanclubwallet</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/0218434a0c746b6c8ea1785fbfe0b31a5f66d3e5.jpg">
+                    <h1 id="nick_name">林亦LYi</h1>
+                    <h1 id="date" style="color: gray;">2022-06-30 20:02:07</h1>
+                </div>
+                <h1>【亦】学习方法分享：工具和努力一样重要</h1>
+
+                <a href="https://www.bilibili.com/video/BV1rr4y1M7MU"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/011e5a1bfb8b42d39ad37be257a72f793e9b7719.jpg"></a>
+                <p>用过这么多知识管理工具了，飞书才是家，还免费。
+
+Timestamp： 
+00:00 我是怎么用上飞书的
+01:52 免费的文件同步
+02:43 云文档
+06:50 妙记：处理视频和语音
+09:21 多维表格：任务管理
+12:07 时间管理的四象限法则
+12:57 日历、任务功能
+13:47 另辟蹊径的飞书</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/2a20bb2fb3a29cae314e3860e39dc9e6885ca536.jpg">
+                    <h1 id="nick_name">锦堂生活空间</h1>
+                    <h1 id="date" style="color: gray;">2022-06-30 18:46:43</h1>
+                </div>
+                <h1>学习博主终于实现曾经的梦幻桌面，必须把装机过程记录下来！</h1>
+
+                <a href="https://www.bilibili.com/video/BV12W4y1z7tp"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/ca704795e30537b03e513be2e34266ccfe9eb4bb.jpg"></a>
+                <p>终于实现曾经梦想的桌面了~继续努力，还有其他小目标待完成！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/382e4c81565b8720b7890885f14d1c6e1cad2f51.jpg">
+                    <h1 id="nick_name">硬件茶谈</h1>
+                    <h1 id="date" style="color: gray;">2022-06-30 17:48:34</h1>
+                </div>
+                <h1>三维装机教程快进入尾声了，还差接线和安装显卡就全部搞定了[奋斗][奋斗]</h1>
+
+                <a href="https://www.bilibili.com/video/BV1HG411x7de"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/34d142bcbc699c7c15b083e60af0f510d9c933fb.png"></a>
+                <p>三维装机教程快进入尾声了，还差接线和安装显卡就全部搞定了[奋斗][奋斗]</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/59563e87b949107bfde66abec0a37952f4ec4218.jpg">
+                    <h1 id="nick_name">啥都会一点的研究生</h1>
+                    <h1 id="date" style="color: gray;">2022-06-30 16:58:38</h1>
+                </div>
+                <h1>这份实用校招指南，请查收</h1>
+
+                <a href="https://www.bilibili.com/video/BV17Z4y1e7zk"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/1a1a46a3be572487fb3018b049c3999a4aa19bf4.jpg"></a>
+                <p>超级简历：https://www.wondercv.com/
+牛客网：https://www.nowcoder.com/
+人工智能面试宝典：https://www.bilibili.com/read/cv15472202
+公众号：XX大学就业指导中心、XX省招聘
+常规招聘：前程无忧、智联招聘等
+应届生招聘：应届生求职网、梧桐果等
+社区：脉脉
+应届薪资：Offershow小程序
+已开启秋招的公司名单及地址：公众号【啥都会一点的研究生】->校招
+Leetcode：https://leetcode.cn/
+li</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-06-30 15:16:23</h1>
+                </div>
+                <h1>2022暑假成为大女主/男主  | 假期如何“不荒废” 逆袭  | 高质量度过暑假</h1>
+
+                <a href="https://www.bilibili.com/video/BV1rG411s7i3"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/92491ac637d31356a977be93540dce34c64f82ee.jpg"></a>
+                <p>暑假如何既能好好放松，又能轻松偷偷逆袭呢？分享好质量假期的ideas合集~！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
+                    <h1 id="nick_name">大狸子切切里</h1>
+                    <h1 id="date" style="color: gray;">2022-06-28 19:57:25</h1>
+                </div>
+                <h1>【全球首发】超大杯版Switch OLED Lite ？Win掌机终于能揣兜了？AYANEO AIR体验</h1>
+
+                <a href="https://www.bilibili.com/video/BV1AS4y1n7Qy"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/4025225907a20dd6958d0dc6a4abbc32382f71f6.jpg"></a>
+                <p>大家小时候有玩过掌机么？这台掌机我和朋友们期待了挺久的，之前的掌机为了兼顾性能，其实都很大很夸张，AYA这次说会做的比SWITCH还轻，那这台首款轻薄掌机到底如何呢？
+求生欲：这不是广告，不是恰饭，这里也并没有推荐大家购买，大家对产品有什么建议也可以发在评论区，AYA掌机也会看这个视频，关注大家的反馈。
+
+
+秒杀所有Windows掌机？Steam Deck 天价买首发 真的好玩么？BV1VS4y1e749
+假货敢问就敢说正品？有钱难买真原装 手柄超详细入坑指南！BV1MF411G75C
+上当了！！买个真的</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/505ad86b845f775471e8d82bdca293181b3abb5b.jpg">
+                    <h1 id="nick_name">不高兴就喝水</h1>
+                    <h1 id="date" style="color: gray;">2022-06-24 22:05:15</h1>
+                </div>
+                <h1>大城市本身比互联网更懂裁员 | 离家前先看看这个</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Er4y1g7j4"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/9d046b736798f897958e3dd3434a1f0218833f8b.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/0218434a0c746b6c8ea1785fbfe0b31a5f66d3e5.jpg">
+                    <h1 id="nick_name">林亦LYi</h1>
+                    <h1 id="date" style="color: gray;">2022-06-24 21:55:01</h1>
+                </div>
+                <h1>宿舍神机！全网第二细的ITX装机教程</h1>
+
+                <a href="https://www.bilibili.com/video/BV1BL4y1P78c"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/3e1d15da564bed40f36dd61c8ef27b548c4dd815.jpg"></a>
+                <p>这次为了搭建一台能搬着在两个工作室之间通勤的小型游戏开发主机，我来到ITXLAB请老玩家koukou装了一台ITX迷你电脑。在装机的过程中koukou给我讲了ITX领域的很多特殊知识，我觉得很有帮助，于是请koukou侧重ITX装机时的共性问题，把这个过程制作成了一份非常细致的视频教程。除了安装步骤之外，koukou还基于我这套特殊的硬件配置，讲解了极限情况下对ITX温度与功耗的控制思路与方法，对其他ITX配置也有参考意义。视频涉及的步骤都写在时间章节信息里了，方便大家以后回来看的时候参考。希望可以在40</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-06-23 18:43:54</h1>
+                </div>
+                <h1>大自然会自卑吗？</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Gg411X7Rs"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/e61240cdf2694e48b685e33c6b553a82309d0da7.jpg"></a>
+                <p>BGM：《Midnight Canyon》/The Cheers Cheers</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-06-21 10:43:19</h1>
+                </div>
+                <h1>女大学生永远的痛</h1>
+
+                <a href="https://www.bilibili.com/video/BV1EN4y137Ld"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/118581217a4ea1e8d82514a2b8c9430ecf375fc7.jpg"></a>
+                <p>https://v.douyin.com/YPfFcNB/
+BGM：《Penguin's game》/Comao</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-06-19 18:04:30</h1>
+                </div>
+                <h1>Weekend Vlog｜配眼镜｜装电风扇｜整理衣柜｜买一束花｜为夏天做准备｜富士XS10拍摄</h1>
+
+                <a href="https://www.bilibili.com/video/BV13F411c7L4"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/50d56788caf05ddea676686372933f5f79ea95c2.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+相机：富士XS10/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+支架：影视飓风xUNOKI联名 Tripod-Go 便携三脚架
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-06-19 18:00:16</h1>
+                </div>
+                <h1>浙江Vlog｜隔离看雨｜生日小蛋糕｜爬山看水｜夏天吃烧烤和西瓜｜见好友｜富士XS10拍vlog</h1>
+
+                <a href="https://www.bilibili.com/video/BV1at4y1H7gS"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/5202b2af09571dc9e48cc02070821bd4eed2b146.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+相机：富士XS10/佳能G7X Mark 3/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+支架：影视飓风xUNOKI联名 Tripod-Go 便携三脚架
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i1.hdslb.com/bfs/face/0218434a0c746b6c8ea1785fbfe0b31a5f66d3e5.jpg">
+                    <h1 id="nick_name">林亦LYi</h1>
+                    <h1 id="date" style="color: gray;">2022-06-17 20:01:02</h1>
+                </div>
+                <h1>【亦】游戏作弊码是怎么来的？又是怎么没的？</h1>
+
+                <a href="https://www.bilibili.com/video/BV1FS4y1v7Vm"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/b4ae0ad942a0e803eeb147ffc03f32ff671d0f7c.jpg"></a>
+                <p>游戏作弊码是咱们童年游戏中十分常见的东西，近几年的游戏中与作弊码类似的机制已经十分少见了，游戏作弊码是怎样出现的又是如何消失的，这期咱们一起唠唠游戏作弊码的前世今生。
+Timestamp：
+00:00 老游戏中经典的作弊码
+01:03 最古早、最有名的游戏作弊码：科乐美代码
+01:48 科乐美代码诞生的契机
+04:48 游戏作弊码流行的原因
+07:16 游戏作弊码逐渐走向没落</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-06-16 12:02:44</h1>
+                </div>
+                <h1>毕业后发现生活平衡是假的 | 那如何平衡生活？ ft. Pico VR</h1>
+
+                <a href="https://www.bilibili.com/video/BV1JY411T7c1"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/deec3615a600a2780bb0d3b1e901662d705db1a1.jpg"></a>
+                <p>你有没有因为追求【work-life balance】而感到焦虑？</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/2a20bb2fb3a29cae314e3860e39dc9e6885ca536.jpg">
+                    <h1 id="nick_name">锦堂生活空间</h1>
+                    <h1 id="date" style="color: gray;">2022-06-15 18:49:00</h1>
+                </div>
+                <h1>全国前十 | 数理十大 | 考上梦想大学 | 我是如何逆袭成功的？</h1>
+
+                <a href="https://www.bilibili.com/video/BV1cr4y1G7RR"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/3e6b5ffe87e9bddfa16490a837636ea5bf31bf81.jpg"></a>
+                <p>为了拿数理十大和考上清华，我被迫放弃了社交。希望你一直有面对生活的勇气，相信结果一定不会让你失望！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-06-15 15:26:18</h1>
+                </div>
+                <h1>非必要，不浪漫</h1>
+
+                <a href="https://www.bilibili.com/video/BV1T341137iD"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/57d793e79e80c901659dc60e6d05e7143f8fa8a5.jpg"></a>
+                <p>BGM：《Que Sera Sera》/Billianne</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-06-15 12:00:29</h1>
+                </div>
+                <h1>富士XS10开箱｜使用感受｜适合拍vlog吗｜与佳能G7X Mark 3对比｜富士直出｜爱上拍照</h1>
+
+                <a href="https://www.bilibili.com/video/BV1DY411M74i"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/9698b80173343e6c266003dd6b663e6ec6a97385.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+相机：富士XS10/Canon G7X Mark3/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+键盘：BOW, HB0982SL
+支架：影视飓风xUNOKI联名 Tripod-Go 便携三脚架
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-06-14 22:00:08</h1>
+                </div>
+                <h1>拯救失眠2.0 | 快速入睡的绝密技巧 | 睡着技巧/失眠治疗</h1>
+
+                <a href="https://www.bilibili.com/video/BV1J34y157Lb"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/5f693d855945c0d1e7091fbb541a99c533a2ea03.jpg"></a>
+                <p>失眠体质又来和大家分享最近的睡着技巧！现在2分钟就能睡着啦，最久10分钟下线~</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/2a20bb2fb3a29cae314e3860e39dc9e6885ca536.jpg">
+                    <h1 id="nick_name">锦堂生活空间</h1>
+                    <h1 id="date" style="color: gray;">2022-06-13 21:15:01</h1>
+                </div>
+                <h1>别卷了！清华学长带头劳逸结合，打游戏才是正经事！</h1>
+
+                <a href="https://www.bilibili.com/video/BV1MY411u7FB"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/e5f732a0aa2abb90565467b9441d64cc2cedca26.jpg"></a>
+                <p>刚好是马来西亚的假期，今天的内卷先暂停一下，和一起玩到大的好兄弟一起放松放松！不得不说，表弟的外星人主机打起游戏来简直不要太爽！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-06-10 16:00:10</h1>
+                </div>
+                <h1>回到广州满血复活😊与姐妹们重聚! | 小蛮腰夜景 | OPPO Reno8 Pro+记录的快乐</h1>
+
+                <a href="https://www.bilibili.com/video/BV1UW4y1r7Zy"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/e46752d4b1918a3bd31781ae827cd3dbe7029883.jpg"></a>
+                <p>重返人群有点社恐, 但是我的快乐回来了！！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-06-08 19:08:34</h1>
+                </div>
+                <h1>为什么看见美好事物也会想哭？</h1>
+
+                <a href="https://www.bilibili.com/video/BV1cL4y1T7jW"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/6179055bfb22bcbd2b7197fdf036455a4459e2b8.jpg"></a>
+                <p>BGM：《Rainbow River》/Mutual Benefit</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/505ad86b845f775471e8d82bdca293181b3abb5b.jpg">
+                    <h1 id="nick_name">不高兴就喝水</h1>
+                    <h1 id="date" style="color: gray;">2022-06-07 18:10:05</h1>
+                </div>
+                <h1>【计算机 | 软件工程】报考、学习、就业指南</h1>
+
+                <a href="https://www.bilibili.com/video/BV1kT411V7tw"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/ad8e93dd00851bffe2d1453e0ec39fe2a1a07a92.jpg"></a>
+                <p>计算机科学与技术   软件工程   这两个专业的报考、学习、与就业指南</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
+                    <h1 id="nick_name">ElenaLin_青青</h1>
+                    <h1 id="date" style="color: gray;">2022-06-06 16:38:12</h1>
+                </div>
+                <h1>要不要出国留学？🏫  国内国外读大学有什么不一样？</h1>
+
+                <a href="https://www.bilibili.com/video/BV13S4y1i7G7"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/c9502e00dd3fa5a044e720f7a1516b5391f8763c.jpg"></a>
+                <p>由于拥有多年的大学读书经验，今天和大家分享一下中外读大学的对比~！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-06-01 17:45:06</h1>
+                </div>
+                <h1>全员瓜兮兮</h1>
+
+                <a href="https://www.bilibili.com/video/BV11F41157MX"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/f7b5657d029d75aa6806fe1354ee14292ac3f3d3.jpg"></a>
+                <p>BGM：《Monkeys Spinning Monkeys》/Kevin MacLeod</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-06-01 12:00:10</h1>
+                </div>
+                <h1>关于我在B站捡了个男朋友这件事</h1>
+
+                <a href="https://www.bilibili.com/video/BV1sY4y1B7ks"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/bf6bf986746fbb4ed4e596ce36e5cfb0a75f8ed2.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+微博/豆瓣/小宇宙同名。
+
+相机：Canon G7X Mark3/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+键盘：BOW, HB0982SL
+支架：Ulanzi, MT-08
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/2a20bb2fb3a29cae314e3860e39dc9e6885ca536.jpg">
+                    <h1 id="nick_name">锦堂生活空间</h1>
+                    <h1 id="date" style="color: gray;">2022-05-29 14:42:44</h1>
+                </div>
+                <h1>学习老走神？清华生亲测条件反射实验，3秒拉回学习状态！</h1>
+
+                <a href="https://www.bilibili.com/video/BV1z94y1S7Sp"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/a551e50662a5b2576970c4672528607acf9d2619.jpg"></a>
+                <p>这期视频的拍摄耗时三个周+，素材堆满了1T的硬盘，还好功夫不负有心人，终于让我找到了三秒无痛进入学习状态的方法！</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-05-27 16:50:19</h1>
+                </div>
+                <h1>我也想像小狗一样快乐！</h1>
+
+                <a href="https://www.bilibili.com/video/BV1MY4y1B7yK"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/ebb3e33a518de097a0db24e0f90608a6c44bac02.jpg"></a>
+                <p>BGM：《Sunroof》/Nicky Youre&Dazy</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-05-27 12:00:33</h1>
+                </div>
+                <h1>离沪Vlog｜🚄高铁离沪全记录｜📍金华中转｜⚠️离沪注意事项｜终将看到彩虹🌈</h1>
+
+                <a href="https://www.bilibili.com/video/BV1B34y1j7NX"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/33dcafbc738379540fa69d9c21a85e9bbaf1b7df.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+微博/豆瓣/小宇宙同名。
+
+相机：Canon G7X Mark3/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+键盘：BOW, HB0982SL
+支架：Ulanzi, MT-08
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
+                    <h1 id="nick_name">快乐治愈小分队</h1>
+                    <h1 id="date" style="color: gray;">2022-05-20 17:17:13</h1>
+                </div>
+                <h1>“等一个自然而然的晴天”</h1>
+
+                <a href="https://www.bilibili.com/video/BV1sT4y1z7C2"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/9805ba2877287323103fb1ae046b15fc072b280d.jpg"></a>
+                <p>BGM：《Cruel Summer》/Taylor Swift</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i0.hdslb.com/bfs/face/469907cf7ef46beba8807eb0add2e974a480d200.jpg">
+                    <h1 id="nick_name">小蝶今天吃饱了</h1>
+                    <h1 id="date" style="color: gray;">2022-05-20 12:00:11</h1>
+                </div>
+                <h1>【小蝶】夏天如约而至，你好吗？🥂🥤💪</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Yg411d74Y"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/c631142f82acfcd34362027db6d98c4d1a1365da.jpg"></a>
+                <p>我们都要健康快乐喔！
+
+微博/豆瓣/小宇宙同名。
+
+相机：Canon G7X Mark3/Gopro 10/iPhone11
+剪辑：剪映 
+电脑：MacBook Pro (13-inch, M1, 2020)  
+iPad：iPad Pro（11-inch，2020）
+键盘：BOW, HB0982SL
+支架：Ulanzi, MT-08
+
+本视频不含任何推广。</p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/505ad86b845f775471e8d82bdca293181b3abb5b.jpg">
+                    <h1 id="nick_name">不高兴就喝水</h1>
+                    <h1 id="date" style="color: gray;">2022-05-04 19:26:15</h1>
+                </div>
+                <h1>管你张总李总，教练眼里都是怨种</h1>
+
+                <a href="https://www.bilibili.com/video/BV1hS4y1h76T"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/0422e19ac9dba259b4deb666bffc8bec52571e89.jpg"></a>
+                <p></p>
+            </div>
+            
+            <div class="card">
+                <div id="face_card">
+                    <img id="face" src="https://i2.hdslb.com/bfs/face/505ad86b845f775471e8d82bdca293181b3abb5b.jpg">
+                    <h1 id="nick_name">不高兴就喝水</h1>
+                    <h1 id="date" style="color: gray;">2022-04-09 10:20:02</h1>
+                </div>
+                <h1>恶意裁员自保指南 | 公司芭比Q前兆 | 被裁后到底能拿多少钱</h1>
+
+                <a href="https://www.bilibili.com/video/BV1Cu411e78K"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/f9944e090fb2e4fc061a5bef1299c0172ce1dc33.jpg"></a>
+                <p></p>
+            </div>
+            
+</body>
+</html>
