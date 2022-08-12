@@ -1,178 +1,276 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>每日推荐</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background: rgb(255, 255, 255);
+        }
+        
+        #face_card {
+            width: 100%;
+            height: 80px;
+            text-align: left;
+        }
+        
+        #face {
+            width: 50px;
+            height: 50px;
+            border-radius: 40px;
+        }
+        
+        #nick_name,
+        #date {
+            margin-left: 30px;
+            line-height: 40px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        
+        #left_box {
+            text-align: center;
+            margin-left: 50px;
+            display: inline-block;
+            width: 43%;
+        }
+        
+        #right_box {
+            text-align: center;
+            margin-right: 50px;
+            float: right;
+            width: 43%;
+        }
+        
+        .div1 {
+            width:100%;
+            text-align: center;
+            background: rgb(241, 241, 241);
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin: 30px 2% 30px 0px;
+            /* 正方形图标圆角半径20px */
+            border-radius: 20px;
+            /* 第一个值是外阴影X&Y轴方向偏移18px，模糊度半径是30px，阴影颜色为0.2透明度的黑色 */
+            /* 第二个值是外阴影X&Y轴方向偏移-18px，模糊度半径是30px，阴影颜色为白色 */
+            box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2), -18px -18px 30px rgba(255, 255, 255, 1);
+            /* tricks: 利用transition给常态于按压态两者状态互相变换过程增加缓动动画 */
+            transition: all 0.2s ease-in-out;
+            display: inline-block;
+        }
+    </style>
+
 </head>
-<style>
-    #face_card {
-        width: 100%;
-        height: 80px;
-        text-align: left;
-    }
-    
-    #face {
-        width: 80px;
-        height: 80px;
-        border-radius: 40px;
-    }
-    
-    #nick_name,#date {
-        margin-left: 30px;
-        line-height: 40px;
-        overflow: hidden;
-        display: inline-block;
-    }
-    
-    .card {
-        text-align: center;
-        background: rgb(244, 244, 244);
-        justify-content: center;
-        align-items: center;
-        margin: 60px 500px 10px 500px;
-        padding: 30px;
-        /* 正方形图标圆角半径20px */
-        border-radius: 20px;
-        /* 第一个值是外阴影X&Y轴方向偏移18px，模糊度半径是30px，阴影颜色为0.2透明度的黑色 */
-        /* 第二个值是外阴影X&Y轴方向偏移-18px，模糊度半径是30px，阴影颜色为白色 */
-        box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2), -18px -18px 30px rgba(255, 255, 255, 1);
-        /* tricks: 利用transition给常态于按压态两者状态互相变换过程增加缓动动画 */
-        transition: all 0.2s ease-in-out;
-    }
-</style>
 
 <body>
 
-                <div class="card">
+    <div id="left_box">
+        <h1 style="margin-top: 30px;">bilibili关注up主</h1>
+    
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i0.hdslb.com/bfs/face/229599e175faafa1855c0f103d512e8b469b5aad.jpg">
-                        <h1 id="nick_name">差评君</h1>
-                        <h1 id="date" style="color: gray;">2022-08-12 19:35:03</h1>
+                        <h2 id="nick_name">差评君</h2>
+                        <h2 id="date" style="color: gray;">2022-08-12 19:35:03</h2>
                     </div>
-                    <h1>投了几百万就剩几只羊，周鸿祎堪称投资界的欢乐喜剧人【差评君】</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1gd4y1o7MZ"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/c4af3a14e230f179fa20e88bf5cfbdbd53de5413.jpg"></a>
-                    <p>这个自称 “ 湖北第三聪明的人 ”，在投资踩雷这方面属实有点发挥超常了，毕竟这几年周总踩过坑的项目，整理出来估计都够写一本《投资必坑指南》了。自从 2005 年周鸿祎在投资这条道上，就一刻都没闲着。
-今天咱聊点轻松搞笑的，那就是周总的投资。</p>
+                    <h2>投了几百万就剩几只羊，周鸿祎堪称投资界的欢乐喜剧人【差评君】</h2>
+                    <a href="https://www.bilibili.com/video/BV1gd4y1o7MZ"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i2.hdslb.com/bfs/archive/c4af3a14e230f179fa20e88bf5cfbdbd53de5413.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">这个自称 “ 湖北第三聪明的人 ”，在投资踩雷这方面属实有点发挥超常了，毕竟这几年周总踩过坑的项目，整理出来估计都够写一本《投资必坑指南》了。自从 2005 年周鸿祎在投资这条道上，就一刻都没闲着。
+今天咱聊点轻松搞笑的，那就是周总的投资。
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i2.hdslb.com/bfs/face/505ad86b845f775471e8d82bdca293181b3abb5b.jpg">
-                        <h1 id="nick_name">不高兴就喝水</h1>
-                        <h1 id="date" style="color: gray;">2022-08-12 19:00:47</h1>
+                        <h2 id="nick_name">不高兴就喝水</h2>
+                        <h2 id="date" style="color: gray;">2022-08-12 19:00:47</h2>
                     </div>
-                    <h1>面朝职场，遍体鳞伤</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1og411k7sf"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/22ecd64caeae6f35f585404abf6037b3048d0b73.jpg"></a>
-                    <p>感谢西昊携新品Doro-C300人体工学椅对本期视频的支持</p>
+                    <h2>面朝职场，遍体鳞伤</h2>
+                    <a href="https://www.bilibili.com/video/BV1og411k7sf"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i0.hdslb.com/bfs/archive/22ecd64caeae6f35f585404abf6037b3048d0b73.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">感谢西昊携新品Doro-C300人体工学椅对本期视频的支持
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i2.hdslb.com/bfs/face/a6d51b89c93517a72949b0a469126445cd4d33bd.jpg">
-                        <h1 id="nick_name">大狸子切切里</h1>
-                        <h1 id="date" style="color: gray;">2022-08-12 09:50:21</h1>
+                        <h2 id="nick_name">大狸子切切里</h2>
+                        <h2 id="date" style="color: gray;">2022-08-12 09:50:21</h2>
                     </div>
-                    <h1>我都玩不动了，它居然还有电？</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1ca411Z7Zx"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/712e32cc60f3b9340c5033456b6c99950fd806e1.jpg"></a>
-                    <p>记得上一次出门玩还是三个月前的事情了，已经很久没有这样高强度的外出行动了，如果大家喜欢这种vlog，一定要点赞三连呀～</p>
+                    <h2>我都玩不动了，它居然还有电？</h2>
+                    <a href="https://www.bilibili.com/video/BV1ca411Z7Zx"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i0.hdslb.com/bfs/archive/712e32cc60f3b9340c5033456b6c99950fd806e1.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">记得上一次出门玩还是三个月前的事情了，已经很久没有这样高强度的外出行动了，如果大家喜欢这种vlog，一定要点赞三连呀～
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
-                        <h1 id="nick_name">电丸科技AK</h1>
-                        <h1 id="date" style="color: gray;">2022-08-11 18:30:03</h1>
+                        <h2 id="nick_name">电丸科技AK</h2>
+                        <h2 id="date" style="color: gray;">2022-08-11 18:30:03</h2>
                     </div>
-                    <h1>无人驾驶出租车 落地深圳 已成现实「SIGNOW」</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1Mg411k77e"><img style="width: 300px;height: 200px" src="https://i1.hdslb.com/bfs/archive/d1c70c351c3aeaba008642ce5d47edfb3ac5304e.jpg"></a>
-                    <p></p>
+                    <h2>无人驾驶出租车 落地深圳 已成现实「SIGNOW」</h2>
+                    <a href="https://www.bilibili.com/video/BV1Mg411k77e"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i1.hdslb.com/bfs/archive/d1c70c351c3aeaba008642ce5d47edfb3ac5304e.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i0.hdslb.com/bfs/face/203cc4c913710d2e1b58f576aa5d7ebcbbc76bcc.jpg">
-                        <h1 id="nick_name">快乐治愈小分队</h1>
-                        <h1 id="date" style="color: gray;">2022-08-11 14:50:41</h1>
+                        <h2 id="nick_name">快乐治愈小分队</h2>
+                        <h2 id="date" style="color: gray;">2022-08-11 14:50:41</h2>
                     </div>
-                    <h1>“你在不开心吗？”</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1Sd4y1m745"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/dcf83155252ee99e0d649b29e3bb9d112ea17d61.jpg"></a>
-                    <p>BGM：《Little Things》/Adrián Berenguer</p>
+                    <h2>“你在不开心吗？”</h2>
+                    <a href="https://www.bilibili.com/video/BV1Sd4y1m745"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i2.hdslb.com/bfs/archive/dcf83155252ee99e0d649b29e3bb9d112ea17d61.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">BGM：《Little Things》/Adrián Berenguer
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i0.hdslb.com/bfs/face/229599e175faafa1855c0f103d512e8b469b5aad.jpg">
-                        <h1 id="nick_name">差评君</h1>
-                        <h1 id="date" style="color: gray;">2022-08-10 18:01:27</h1>
+                        <h2 id="nick_name">差评君</h2>
+                        <h2 id="date" style="color: gray;">2022-08-10 18:01:27</h2>
                     </div>
-                    <h1>油车还是电车？一百年前就已经有人讨论了。【差评君】</h1>
-
-                    <a href="https://www.bilibili.com/video/BV16v4y1F7xq"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/4e544e0f143b09c14fd5113936051462cb448e61.jpg"></a>
-                    <p>经常会听见周围的同事，会因为购买油车还是电车这个话题进行一些深入的讨论。有同事会怀念已经发展了一百多年的内燃机，觉得那才是真男人的浪漫。而另外一批同事则认为，现在的油车已经是最后的落日余晖了，我们应该拥抱新技术，趁早熟悉电动车。但其实电动汽车的出现比燃油车还要早5年，那为什么我们没有选择直接研究电动车呢？今天我们就好好来聊聊电动车的发展历史。
+                    <h2>油车还是电车？一百年前就已经有人讨论了。【差评君】</h2>
+                    <a href="https://www.bilibili.com/video/BV16v4y1F7xq"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i2.hdslb.com/bfs/archive/4e544e0f143b09c14fd5113936051462cb448e61.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">经常会听见周围的同事，会因为购买油车还是电车这个话题进行一些深入的讨论。有同事会怀念已经发展了一百多年的内燃机，觉得那才是真男人的浪漫。而另外一批同事则认为，现在的油车已经是最后的落日余晖了，我们应该拥抱新技术，趁早熟悉电动车。但其实电动汽车的出现比燃油车还要早5年，那为什么我们没有选择直接研究电动车呢？今天我们就好好来聊聊电动车的发展历史。
 
 【参考资料】
 极驾客：你知道吗？电动车可比燃油车诞生早半个世纪呢！
 品阅网：世界新能源汽车发展史
 爱卡汽车：电动车的先驱，具有里程碑意义的电动车
-太平洋汽车：比内</p>
+太平洋汽车：比内
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
-                        <h1 id="nick_name">电丸科技AK</h1>
-                        <h1 id="date" style="color: gray;">2022-08-10 17:20:01</h1>
+                        <h2 id="nick_name">电丸科技AK</h2>
+                        <h2 id="date" style="color: gray;">2022-08-10 17:20:01</h2>
                     </div>
-                    <h1>为什么我不希望大家去氪手游</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1Sd4y1N7DE"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/16ab4f3f8d64f62a5d5306c344b03332d5e99be3.jpg"></a>
-                    <p></p>
+                    <h2>为什么我不希望大家去氪手游</h2>
+                    <a href="https://www.bilibili.com/video/BV1Sd4y1N7DE"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i0.hdslb.com/bfs/archive/16ab4f3f8d64f62a5d5306c344b03332d5e99be3.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i0.hdslb.com/bfs/face/60e6b122ca7b80add4b17db4f5b8c6bd0fa8f8e5.jpg">
-                        <h1 id="nick_name">ElenaLin_青青</h1>
-                        <h1 id="date" style="color: gray;">2022-08-10 14:55:11</h1>
+                        <h2 id="nick_name">ElenaLin_青青</h2>
+                        <h2 id="date" style="color: gray;">2022-08-10 14:55:11</h2>
                     </div>
-                    <h1>博主移动办公的必备好物 👜 VLOG相机 | 电脑包Macbook包</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1tg411y7QD"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/3a91013ca8235e95b34264553f69fe07c47be235.jpg"></a>
-                    <p>分享最近超超超多人问的常用随身好物！！！</p>
+                    <h2>博主移动办公的必备好物 👜 VLOG相机 | 电脑包Macbook包</h2>
+                    <a href="https://www.bilibili.com/video/BV1tg411y7QD"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i2.hdslb.com/bfs/archive/3a91013ca8235e95b34264553f69fe07c47be235.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">分享最近超超超多人问的常用随身好物！！！
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i1.hdslb.com/bfs/face/83de26930556a891868f03b27c39ef5738117687.jpg">
-                        <h1 id="nick_name">电丸科技AK</h1>
-                        <h1 id="date" style="color: gray;">2022-08-08 18:30:06</h1>
+                        <h2 id="nick_name">电丸科技AK</h2>
+                        <h2 id="date" style="color: gray;">2022-08-08 18:30:06</h2>
                     </div>
-                    <h1>小扎这一步走不好可能要破产「SIGNOW」</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1ra411o7qj"><img style="width: 300px;height: 200px" src="https://i0.hdslb.com/bfs/archive/942cfa9c761344c732fb25ffd56f6bb3b5024cba.jpg"></a>
-                    <p></p>
+                    <h2>小扎这一步走不好可能要破产「SIGNOW」</h2>
+                    <a href="https://www.bilibili.com/video/BV1ra411o7qj"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i0.hdslb.com/bfs/archive/942cfa9c761344c732fb25ffd56f6bb3b5024cba.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">
+                    </p>
                 </div>
                 
-                <div class="card">
+                <div class="div1">
                     <div id="face_card">
                         <img id="face" src="https://i1.hdslb.com/bfs/face/382e4c81565b8720b7890885f14d1c6e1cad2f51.jpg">
-                        <h1 id="nick_name">硬件茶谈</h1>
-                        <h1 id="date" style="color: gray;">2022-08-07 12:00:50</h1>
+                        <h2 id="nick_name">硬件茶谈</h2>
+                        <h2 id="date" style="color: gray;">2022-08-07 12:00:50</h2>
                     </div>
-                    <h1>【硬件科普】现在手机还能充的更快吗？</h1>
-
-                    <a href="https://www.bilibili.com/video/BV1iG411b72t"><img style="width: 300px;height: 200px" src="https://i2.hdslb.com/bfs/archive/e85c64d27ce26eeceff4211fbd4dd022eba84847.jpg"></a>
-                    <p>这是2012年发布的iPhone5，电池容量只有1440mAh，支持5V1A 5W的充电，冲至100%需耗时两个小时，而这是VIVO刚刚发布的iQOO 10PRO，电池容量达到了4700mAh，支持最大20V10A 200W的充电，官方宣称冲至100%仅需10分钟。手机的充电功率从早期的5W 10W一路发展到现在的120W 200W，看上去只是充电功率数字的增加，但其实背后还存在大量不为人知的技术障碍和困难，这期节目我们将带你从最底层了解手机到底是如何实现快充的。</p>
+                    <h2>【硬件科普】现在手机还能充的更快吗？</h2>
+                    <a href="https://www.bilibili.com/video/BV1iG411b72t"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://i2.hdslb.com/bfs/archive/e85c64d27ce26eeceff4211fbd4dd022eba84847.jpg"></a>
+                    <p style="margin: 30px;text-align:left;">这是2012年发布的iPhone5，电池容量只有1440mAh，支持5V1A 5W的充电，冲至100%需耗时两个小时，而这是VIVO刚刚发布的iQOO 10PRO，电池容量达到了4700mAh，支持最大20V10A 200W的充电，官方宣称冲至100%仅需10分钟。手机的充电功率从早期的5W 10W一路发展到现在的120W 200W，看上去只是充电功率数字的增加，但其实背后还存在大量不为人知的技术障碍和困难，这期节目我们将带你从最底层了解手机到底是如何实现快充的。
+                    </p>
                 </div>
                 
+    </div>
+    
+    <div id="right_box">
+        <h1 style="margin-top: 30px;">CSDN热榜排行</h1>
+    
+            <div class="div1">
+                <div id="face_card">
+                    <img id="face" src="https://profile.csdnimg.cn/F/6/9/3_m0_56051805">
+                    <h2 id="nick_name">我今年十六岁</h2>
+                    <h2 id="date" style="color: gray;">2022-08-13-01</h2>
+                </div>
+                <h2>【OpenCV】 红绿灯识别检测</h2>
+                <a href="https://blog.csdn.net/m0_56051805/article/details/126286905"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://img-blog.csdnimg.cn/2d2aa33769d142c29b368387235b1d92.png"></a>
+                <p style="margin: 30px;text-align:left;">
+                </p>
+            </div>
+            
+            <div class="div1">
+                <div id="face_card">
+                    <img id="face" src="https://profile.csdnimg.cn/F/C/D/3_guyuealian">
+                    <h2 id="nick_name">PKing666666</h2>
+                    <h2 id="date" style="color: gray;">2022-08-13-01</h2>
+                </div>
+                <h2>人体姿态估计(人体关键点检测)2D Pose训练代码和Android源码</h2>
+                <a href="https://blog.csdn.net/guyuealian/article/details/125502259"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://img-blog.csdnimg.cn/20210723091643896.gif"></a>
+                <p style="margin: 30px;text-align:left;">
+                </p>
+            </div>
+            
+            <div class="div1">
+                <div id="face_card">
+                    <img id="face" src="https://profile.csdnimg.cn/3/F/5/3_suic009">
+                    <h2 id="nick_name">老师我作业忘带了</h2>
+                    <h2 id="date" style="color: gray;">2022-08-13-01</h2>
+                </div>
+                <h2>openCV实践项目：图片文本检测</h2>
+                <a href="https://blog.csdn.net/suic009/article/details/126264868"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://img-blog.csdnimg.cn/63ee81e5a445420485f1e35dc7b204c0.png"></a>
+                <p style="margin: 30px;text-align:left;">
+                </p>
+            </div>
+            
+            <div class="div1">
+                <div id="face_card">
+                    <img id="face" src="https://profile.csdnimg.cn/C/3/3/3_m0_54754302">
+                    <h2 id="nick_name">云曦智划</h2>
+                    <h2 id="date" style="color: gray;">2022-08-13-01</h2>
+                </div>
+                <h2>【Computer Vision】基于卷积神经网络实现美食分类</h2>
+                <a href="https://blog.csdn.net/m0_54754302/article/details/126307018"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://img-blog.csdnimg.cn/f9069a3b0ac64978b3c8fe96a64b32a9.jpeg"></a>
+                <p style="margin: 30px;text-align:left;">
+                </p>
+            </div>
+            
+            <div class="div1">
+                <div id="face_card">
+                    <img id="face" src="https://profile.csdnimg.cn/5/2/5/3_weixin_41010198">
+                    <h2 id="nick_name">点亮～黑夜</h2>
+                    <h2 id="date" style="color: gray;">2022-08-13-01</h2>
+                </div>
+                <h2>windows10 + visual studio配置C/C++编译环境 和 vscode配置C/C++编译环境，以及opencv4.5.5环境</h2>
+                <a href="https://blog.csdn.net/weixin_41010198/article/details/126263212"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="https://img-blog.csdnimg.cn/c83bb6472a05489abb50803b079021c2.png?x-oss-process=image/resize,m_fixed,h_150"></a>
+                <p style="margin: 30px;text-align:left;">
+                </p>
+            </div>
+            
+    </div>
+    
 </body>
 </html>
