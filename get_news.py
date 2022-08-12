@@ -16,9 +16,9 @@ video_list = {
 
 }
 
-# 22:00 ~ 次日 22:00
+# 获取截止现在到7天前的视频
 today = datetime.now().replace(hour=23, minute=0, second=0)
-yesterday = today - timedelta(days=1)
+before = today - timedelta(days=7)
 
 html_top = """
 <!doctype html>
@@ -82,62 +82,62 @@ def get_single_up_info(uid):
     for card in r['data']['cards']:
         # 发布时间
         timestamp = card['desc']['timestamp']
-        time = datetime.utcfromtimestamp(timestamp) + timedelta(hours=8)
-        # print(time)
-        name = card['desc']['user_profile']['info'].get('uname')
-        # 个人信息
-        uid = card['desc']['user_profile']['info']['uid']
-        face = card['desc']['user_profile']['info']['face']
-        name = card['desc']['user_profile']['info'].get('uname')
-        type = card['desc']['type']
-        # print(type)
-        # 获取视频
-        if type == 8:
-            bvid = card['desc']['bvid']
-            video_url = "https://www.bilibili.com/video/" + str(bvid)
-            # print(video_url)
-            title = json.loads(card['card'])['title']
-            # 封面图
-            pic = json.loads(card['card'])['pic']
-            # print(pic)
-            # 视频简介
-            desc = json.loads(card['card'])['desc']
-            # print(desc)
-            # 类型
-            tname = json.loads(card['card'])['tname']
-            # print(tname)
-        # 获取文章
-        elif type == 64:
-            rid_str = card['desc']['rid_str']
-            article_url = "https://www.bilibili.com/read/cv" + str(rid_str)
-            # print(article_url)
-        # 获取说说
-        elif type == 2:
-            talk_id = card['desc']['dynamic_id_str']
-            talk_url = "https://t.bilibili.com/" + str(talk_id)
-            # print(talk_url)
-        # 获取多媒体说说
-        elif type == 1:
-            dynamic_id = card['desc']['dynamic_id']
-            dynamic_url = "https://t.bilibili.com/" + str(dynamic_id)
-            # print(dynamic_url)
-        if type == 8:
-            # 生成视频卡片
-            html_card = """
-            <div class="card">
-                <div id="face_card">
-                    <img id="face" src="{}">
-                    <h1 id="nick_name">{}</h1>
-                    <h1 id="date" style="color: gray;">{}</h1>
-                </div>
-                <h1>{}</h1>
+        time = datetime.fromtimestamp(timestamp)
+        if  before < time < today:
+            name = card['desc']['user_profile']['info'].get('uname')
+            # 个人信息
+            uid = card['desc']['user_profile']['info']['uid']
+            face = card['desc']['user_profile']['info']['face']
+            name = card['desc']['user_profile']['info'].get('uname')
+            type = card['desc']['type']
+            # print(type)
+            # 获取视频
+            if type == 8:
+                bvid = card['desc']['bvid']
+                video_url = "https://www.bilibili.com/video/" + str(bvid)
+                # print(video_url)
+                title = json.loads(card['card'])['title']
+                # 封面图
+                pic = json.loads(card['card'])['pic']
+                # print(pic)
+                # 视频简介
+                desc = json.loads(card['card'])['desc']
+                # print(desc)
+                # 类型
+                tname = json.loads(card['card'])['tname']
+                # print(tname)
+            # 获取文章
+            elif type == 64:
+                rid_str = card['desc']['rid_str']
+                article_url = "https://www.bilibili.com/read/cv" + str(rid_str)
+                # print(article_url)
+            # 获取说说
+            elif type == 2:
+                talk_id = card['desc']['dynamic_id_str']
+                talk_url = "https://t.bilibili.com/" + str(talk_id)
+                # print(talk_url)
+            # 获取多媒体说说
+            elif type == 1:
+                dynamic_id = card['desc']['dynamic_id']
+                dynamic_url = "https://t.bilibili.com/" + str(dynamic_id)
+                # print(dynamic_url)
+            if type == 8:
+                # 生成视频卡片
+                html_card = """
+                <div class="card">
+                    <div id="face_card">
+                        <img id="face" src="{}">
+                        <h1 id="nick_name">{}</h1>
+                        <h1 id="date" style="color: gray;">{}</h1>
+                    </div>
+                    <h1>{}</h1>
 
-                <a href="{}"><img style="width: 300px;height: 200px" src="{}"></a>
-                <p>{}</p>
-            </div>
-            """.format(face, name, time, title, video_url, pic, desc)
-            html_cards += html_card
-            video_list.update({timestamp: html_card})
+                    <a href="{}"><img style="width: 300px;height: 200px" src="{}"></a>
+                    <p>{}</p>
+                </div>
+                """.format(face, name, time, title, video_url, pic, desc)
+                html_cards += html_card
+                video_list.update({timestamp: html_card})
     return html_cards
 
 

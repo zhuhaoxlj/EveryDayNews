@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日推荐</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #face_card {
+            width: 100%;
+            height: 80px;
+            text-align: left;
+        }
+        
+        #face {
+            width: 50px;
+            height: 50px;
+            border-radius: 40px;
+        }
+        
+        #nick_name,
+        #date {
+            margin-left: 30px;
+            line-height: 40px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        
+        .box {
+            margin: auto;
+            text-align: center;
+        }
+        
+        .div1 {
+            width: 43%;
+            text-align: center;
+            background: rgb(241, 241, 241);
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin: 50px 2% 30px 0px;
+            /* 正方形图标圆角半径20px */
+            border-radius: 20px;
+            /* 第一个值是外阴影X&Y轴方向偏移18px，模糊度半径是30px，阴影颜色为0.2透明度的黑色 */
+            /* 第二个值是外阴影X&Y轴方向偏移-18px，模糊度半径是30px，阴影颜色为白色 */
+            box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2), -18px -18px 30px rgba(255, 255, 255, 1);
+            /* tricks: 利用transition给常态于按压态两者状态互相变换过程增加缓动动画 */
+            transition: all 0.2s ease-in-out;
+            display: inline-block;
+        }
+        
+        .div2 {
+            width: 43%;
+            text-align: center;
+            background: rgb(241, 241, 241);
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            /* 正方形图标圆角半径20px */
+            border-radius: 20px;
+            /* 第一个值是外阴影X&Y轴方向偏移18px，模糊度半径是30px，阴影颜色为0.2透明度的黑色 */
+            /* 第二个值是外阴影X&Y轴方向偏移-18px，模糊度半径是30px，阴影颜色为白色 */
+            box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2), -18px -18px 30px rgba(255, 255, 255, 1);
+            /* tricks: 利用transition给常态于按压态两者状态互相变换过程增加缓动动画 */
+            transition: all 0.2s ease-in-out;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="div1">
+            <h1>bilibili</h1>
+        </div>
+        <div class="div2">
+            <h1>csdn</h1>
+        </div>
+    </div>
+    <div class="box">
+        <div class="div1">
+            <div id="face_card">
+                <img id="face" src="/img/author.jpg">
+                <h2 id="nick_name">林亦LYi</h2>
+                <h2 id="date" style="color: gray;">2022年7月13日</h2>
+            </div>
+            <h2>【亦】唠唠计算机与AI的童年：大器晚成！六一儿童节特别篇</h2>
+
+            <a href="https://www.bilibili.com/video/BV1s34y177uS"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="/img/cover.jpg"></a>
+            <p style="margin: 30px;text-align:left;">今天手机、计算机绝对算得上是日常设备了，但它的早期历史却并没有咱们所以为的那样清晰。另一方面，AI技术也并不是印象中那样崭新的技术，而是早在通用计算设备诞生之初就与之相伴相生。这次我们借助AI技术让历史人物动起来，伴着他们的指引，重温计算机与AI早期的这段传奇故事。 Timestamp 00:00 计算机科学之父 01:02 老照片如何动起来 02:04 图灵并不是计算机与AI的起点 02:24 普罗尼的“人列计算机” 04:41 巴贝奇与他的机械计算装置 07:19 计算机与AI的数学起源
+                14:02
+            </p>
+        </div>
+        <div class="div2">
+            <div id="face_card">
+                <img id="face" src="/img/author.jpg">
+                <h2 id="nick_name">林亦LYi</h2>
+                <h2 id="date" style="color: gray;">2022年7月13日</h2>
+            </div>
+            <h2>【亦】唠唠计算机与AI的童年：大器晚成！六一儿童节特别篇</h2>
+
+            <a href="https://www.bilibili.com/video/BV1s34y177uS"><img style="width: 450px;height: 300px;margin:20px 0px -10px 0px;border-radius:20px;" src="/img/cover.jpg"></a>
+            <p style="margin: 30px;text-align:left;">今天手机、计算机绝对算得上是日常设备了，但它的早期历史却并没有咱们所以为的那样清晰。另一方面，AI技术也并不是印象中那样崭新的技术，而是早在通用计算设备诞生之初就与之相伴相生。这次我们借助AI技术让历史人物动起来，伴着他们的指引，重温计算机与AI早期的这段传奇故事。 Timestamp 00:00 计算机科学之父 01:02 老照片如何动起来 02:04 图灵并不是计算机与AI的起点 02:24 普罗尼的“人列计算机” 04:41 巴贝奇与他的机械计算装置 07:19 计算机与AI的数学起源
+                14:02
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
